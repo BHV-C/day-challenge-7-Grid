@@ -1,0 +1,199 @@
+body {
+    top: 0;
+    width: 100%;
+}
+
+.container {
+    background-color: #1e1f21;
+    width: 100%;
+    height: max-content ;
+    position: relative;
+    padding-bottom: 0px;
+}
+
+.grid-container {
+    background-color: #3a3c40;
+    position: relative;
+    padding: 30px;
+    width: 80%;
+    height: 1450px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 290px repeat(6, 270px) 290px;
+    grid-gap: 10px;
+    margin: 0 auto;
+    grid-template-areas:
+    "header header header header header header"
+    "ads ads content1 content1 content1 content1"
+    "content2 content2 content2 content2 content3 content3"
+    "content4 content4 content5 content5 content3 content3"
+    "content6 content6 content6 content7 content7 content7"
+    ;
+
+}
+.grid-item1 {
+    /* grid-column: span 3; */
+    grid-area: header;
+}
+.grid-item2 {
+    grid-area: ads;
+}
+.grid-item3 {
+    grid-area: content1;
+    /* grid-column: span 2; */
+}
+.grid-item4 {
+    /* grid-column: span 2; */
+    grid-area: content2;
+}
+.grid-item5 {
+    /* grid-row: span 2; */
+    grid-area: content3;
+}
+.grid-item6 {
+    grid-area: content4;
+}
+.grid-item7 {
+    grid-area: content5;
+}
+.grid-item8 {
+    /* grid-template-rows: 180px; */
+    grid-area: content6;
+}
+.grid-item9 {
+    grid-area: content7;
+}
+.grid-item label {
+    color: white;
+}
+.grid-item3 .title,.grid-item3 .subtitle,.grid-item3 .like-icon  {
+    color: rgba(52, 29, 1, 0.984) !important;
+}
+.grid-item {
+    position: relative;
+}
+.grid-subitem {
+    position: absolute;
+    top: -10px;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+.grid-subitem1 {
+    /* position: absolute;
+    top: -10px;
+    padding: 10px; */
+}
+.grid-subitem3 {
+    /* position: absolute;
+    top: -10px;
+    padding: 10px; */
+}
+.grid-subitem label {
+    margin: 7px 0;
+    display: block;
+}
+.grid-subitem .btn-div {
+    display: flex;
+}
+.grid1label2 {
+    /* margin-bottom: 80px; */
+}
+.grid-subitem .title{
+    font-size:2.5em;
+    font-weight: 700;
+}
+.grid-subitem .subtitle {
+    font-size:xx-small;
+    font-weight: 700;
+    color: whitesmoke;
+}
+.read-post_btn {
+    background-color: none;
+    background: none;
+    color: white;
+    margin-bottom: 4px;
+    padding: 4px 15px;
+    border-radius: 4px;
+    border: 2px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    width:max-content;
+}
+.like-icon {
+    display: flex;
+    align-items: center;
+    font-size: xx-small;
+
+}
+.icon-label label {
+    color: #3a3c40;
+    background-color: #1e1f21;
+}
+.navbar {
+    color: rgb(179, 181, 183);
+    height: 30px;
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 30px 50px 30px 50px; */
+    margin: 0px auto;
+    padding-top: 20px;
+    padding: 20px 30px 0 30px;
+    background-color: #3a3c40;
+    z-index: 4;
+}
+.navbar i {
+    padding-top: 3px;
+}
+.navbar label {
+    height: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    top: -5px;
+}
+.grid-item img {
+    width: 100%;
+    height: 100%;
+}
+.next-icon {
+    width: 10px;
+    height: 10px;
+    align-items: center;
+    align-self: center;
+}
+.read-post-label {
+    margin: 0;
+}
+.read-post_btn img {
+    margin-left: 5px ;
+    margin-top: 2px;
+}
+.read-post_btn:hover{
+    background-color: lightslategray ;
+    color: white;
+    cursor: pointer;
+}
+.grid-item2 {
+    position: relative;
+}
+.grid-subitem2 {
+    position: absolute;
+    top: 0px;
+    margin: 10px;
+    height: auto;
+    flex-direction: column !important;
+    display: flex;
+}
+.grid-subitem2 label {
+    color: white;
+}
+.label3 {
+    font-size: x-small;
+    margin-top: 10px;
+    position: relative;
+}
